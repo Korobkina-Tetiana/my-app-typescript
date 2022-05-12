@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef} from 'react';
+import {TodoList} from './TodoList'
 
 import {ITodo} from '../types/data'
 
@@ -22,7 +23,8 @@ const App: React.FC = () => {
             <input value={value} onChange={e => setValue(e.target.value)} />
             <button onClick={addTodo}>Add</button>
         </div>
+        <TodoList items={todos} />
     </div>
 }
 
-export {App}
+export { App }
