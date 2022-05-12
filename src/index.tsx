@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './components/App';
+import { products } from './Products/products';
 
 
 const root = ReactDOM.createRoot(
@@ -9,7 +10,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <products />
   </React.StrictMode>
 );
-
-
