@@ -2,7 +2,7 @@ import { ITodo } from "../types/data"
 
 interface ITodoItem extends ITodo {}
 
-const TodoItem: React.FC<ITodoItem> = (props) => {
+export const TodoItem: React.FC<ITodoItem> = (props) => {
     const {id, title, complete} = props;
 
     return <div>
@@ -11,5 +11,3 @@ const TodoItem: React.FC<ITodoItem> = (props) => {
         <button>x</button>
     </div>
 }
-
-export {TodoItem}
